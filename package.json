@@ -5,19 +5,29 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "start-socket": "node socket-server.js",
     "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {
+    "@noble/ciphers": "^1.2.1",
+    "@noble/curves": "^1.8.1",
+    "@noble/post-quantum": "^0.4.0",
+    "date-fns": "^4.1.0",
+    "next": "15.2.4",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "next": "15.2.4"
+    "socket.io": "^4.8.1",
+    "socket.io-client": "^4.8.1"
   },
   "devDependencies": {
+    "@eslint/eslintrc": "^3",
     "@tailwindcss/postcss": "^4",
-    "tailwindcss": "^4",
     "eslint": "^9",
     "eslint-config-next": "15.2.4",
-    "@eslint/eslintrc": "^3"
+    "tailwindcss": "^4"
+  },
+  "optionalDependencies": {
+    "bufferutil": "^4.0.9"
   }
 }
